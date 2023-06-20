@@ -7,50 +7,58 @@
     tools:context=".MainActivity2">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tvpayment"
+        android:id="@+id/tilUserName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="134dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etpayment"
+            android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Salary" />
+            android:hint="Email/UserName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilInvestment"
+        android:id="@+id/tilPasswards"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvpayment">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilUserName">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etInvestment"
+            android:id="@+id/etPasswords"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Investment" />
+            android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilExpenses"
-        android:layout_width="409dp"
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="118dp"
+        android:text="LogIn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilInvestment">
+        app:layout_constraintTop_toBottomOf="@+id/tilPasswards" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etExpenses"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Expenses" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="226dp"
+        android:text="LogIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
